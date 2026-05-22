@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmileKraft Dental Clinic - Dr. Reema Shah | Root Canal, Implants, Smile Makeover Virar West</title>
+<meta name="description" content="Premium dental clinic Virar West. Dr. Reema Shah offers root canal treatment, dental implants, smile makeovers, scaling, orthodontics, teeth whitening, biomimetic restorations. BDS certified. 5⭐ rated.">
+<meta name="keywords" content="dentist Virar West, root canal treatment, dental implants, smile makeover, scaling cleaning, orthodontics braces, teeth whitening, biomimetic dentistry, Dr. Reema Shah">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Sora', 'Segoe UI', sans-serif; line-height: 1.6; color: #3a3a3a; background: #faf8f5; }
+a { text-decoration: none; color: inherit; transition: 0.3s ease; }
+img { max-width: 100%; display: block; height: auto; }
+
+:root { 
+  --brown: #6b5447; 
+  --rose-gold: #c9a082; 
+  --beige: #f5ede6; 
+  --cream: #faf8f5; 
+  --dark: #2a2a2a;
+  --light-brown: #8b7765;
+  --accent: #d4af37;
+}
+
+nav { 
+  position: fixed; top: 0; left: 0; right: 0; 
+  background: rgba(250, 248, 245, 0.85); 
+  padding: 16px 5%; 
+  display: flex; justify-content: space-between; align-items: center; 
+  z-index: 1000; box-shadow: 0 2px 30px rgba(0,0,0,0.05); 
+  backdrop-filter: blur(20px); border-bottom: 1px solid rgba(201, 160, 130, 0.1);
+}
+
+.logo { font-size: 26px; font-weight: 800; letter-spacing: 2px; color: var(--brown); text-transform: uppercase; }
+.logo span { color: var(--rose-gold); }
+
+.nav-links { display: flex; gap: 40px; list-style: none; }
+.nav-links a { color: var(--dark); font-weight: 500; font-size: 13px; letter-spacing: 0.8px; text-transform: uppercase; position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 0; height: 2px; background: linear-gradient(to right, var(--rose-gold), var(--accent)); transition: width 0.4s ease; }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-cta { background: linear-gradient(135deg, var(--rose-gold) 0%, #d4af37 100%); color: white; padding: 11px 28px; border-radius: 50px; font-weight: 700; font-size: 12px; letter-spacing: 0.8px; text-transform: uppercase; box-shadow: 0 8px 25px rgba(201, 160, 130, 0.35); transition: all 0.4s ease; }
+.nav-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(201, 160, 130, 0.5); }
+
+section { padding: 120px 5%; margin-top: 60px; }
+
+h1 { font-size: 72px; font-weight: 900; letter-spacing: -2px; line-height: 1.15; margin-bottom: 25px; color: var(--brown); }
+h2 { font-size: 48px; font-weight: 800; letter-spacing: -1px; margin-bottom: 25px; color: var(--brown); }
+h3 { font-size: 18px; font-weight: 700; color: var(--brown); }
+
+#hero { background: linear-gradient(135deg, #faf8f5 0%, #f5ede6 50%, rgba(201,160,130,0.08) 100%); padding: 140px 5%; margin-top: 60px; position: relative; overflow: hidden; }
+#hero::before { content: ''; position: absolute; top: -40%; right: -5%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201, 160, 130, 0.12) 0%, transparent 70%); border-radius: 50%; z-index: 0; }
+#hero > div { position: relative; z-index: 1; }
+
+#hero h1 { color: var(--brown); font-size: 68px; margin-bottom: 20px; background: linear-gradient(135deg, var(--brown) 0%, var(--light-brown) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.tagline { font-size: 22px; color: var(--rose-gold); margin: 25px 0; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.hero-text { max-width: 680px; margin: 0 0 45px 0; font-size: 17px; line-height: 1.95; color: #555; font-weight: 300; }
+
+.hero-buttons { display: flex; gap: 25px; flex-wrap: wrap; margin-bottom: 70px; }
+.btn { padding: 15px 36px; border-radius: 50px; font-size: 13px; font-weight: 700; border: none; cursor: pointer; transition: all 0.4s ease; letter-spacing: 0.8px; text-transform: uppercase; }
+.btn-primary { background: linear-gradient(135deg, var(--rose-gold) 0%, #d4af37 100%); color: white; box-shadow: 0 8px 25px rgba(201, 160, 130, 0.35); }
+.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(201, 160, 130, 0.5); }
+.btn-secondary { background: transparent; color: var(--brown); border: 2px solid var(--brown); }
+.btn-secondary:hover { background: var(--brown); color: white; }
+
+.stats { display: flex; gap: 60px; flex-wrap: wrap; }
+.stat-num { font-size: 42px; font-weight: 900; background: linear-gradient(135deg, var(--rose-gold), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+.stat-label { font-size: 13px; color: var(--dark); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+
+#services { background: linear-gradient(to bottom, white 0%, #f5ede6 100%); }
+.services-intro { font-size: 16px; color: #666; max-width: 900px; margin: 0 0 60px 0; line-height: 1.8; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; margin-top: 60px; }
+
+.service-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); border: 1.5px solid rgba(201, 160, 130, 0.2); border-radius: 20px; padding: 45px 35px; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden; }
+.service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(to right, var(--rose-gold), var(--accent)); transform: translateX(-100%); transition: transform 0.4s ease; }
+.service-card:hover::before { transform: translateX(0); }
+.service-card:hover { transform: translateY(-12px); background: rgba(255, 255, 255, 0.9); border-color: var(--rose-gold); box-shadow: 0 20px 50px rgba(107, 84, 71, 0.12); }
+
+.service-icon { font-size: 48px; color: var(--rose-gold); margin-bottom: 25px; display: inline-block; transition: all 0.4s ease; }
+.service-card:hover .service-icon { color: var(--accent); transform: scale(1.1); }
+.service-card h3 { font-size: 19px; margin-bottom: 12px; }
+.service-card p { font-size: 15px; color: #666; line-height: 1.8; font-weight: 300; }
+
+#about { background: white; }
+.about-content { display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; max-width: 1400px; margin: 0 auto; }
+.about-img { width: 100%; border-radius: 25px; box-shadow: 0 20px 60px rgba(107, 84, 71, 0.18); overflow: hidden; border: 1px solid rgba(201, 160, 130, 0.1); }
+.about-text h2 { margin-bottom: 35px; }
+.about-text p { margin-bottom: 22px; color: #555; line-height: 1.95; font-size: 16px; font-weight: 300; }
+.highlight { color: var(--rose-gold); font-weight: 700; }
+.credentials { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 35px; }
+.cred { background: linear-gradient(135deg, rgba(201, 160, 130, 0.1), rgba(212, 175, 55, 0.05)); border: 1px solid rgba(201, 160, 130, 0.2); padding: 10px 18px; border-radius: 25px; font-size: 12px; font-weight: 700; color: var(--brown); letter-spacing: 0.6px; text-transform: uppercase; }
+
+#gallery { background: linear-gradient(to bottom, white 0%, #f5ede6 100%); }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 60px; }
+.gallery-item { border-radius: 20px; overflow: hidden; box-shadow: 0 10px 35px rgba(0,0,0,0.1); transition: all 0.4s ease; cursor: pointer; }
+.gallery-item:hover { transform: scale(1.03); box-shadow: 0 15px 45px rgba(0,0,0,0.15); }
+.gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.4s ease; }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.gallery-item:nth-child(1) img { height: 530px; }
+
+#results { background: white; }
+.ba-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
+.ba-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(201, 160, 130, 0.15); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.06); transition: all 0.4s ease; }
+.ba-card:hover { transform: translateY(-8px); box-shadow: 0 15px 45px rgba(0,0,0,0.12); border-color: var(--rose-gold); }
+.ba-image { width: 100%; height: 300px; object-fit: cover; }
+.ba-info { padding: 25px; }
+.ba-title { font-size: 16px; font-weight: 800; margin-bottom: 10px; color: var(--brown); }
+.ba-tag { display: inline-block; background: linear-gradient(135deg, rgba(201, 160, 130, 0.15), rgba(212, 175, 55, 0.1)); color: var(--brown); font-size: 11px; font-weight: 700; padding: 6px 14px; border-radius: 20px; margin-top: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+#reviews { background: linear-gradient(to bottom, #f5ede6 0%, white 100%); }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-top: 60px; }
+.review-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(201, 160, 130, 0.2); border-radius: 20px; padding: 35px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); transition: all 0.4s ease; }
+.review-card:hover { transform: translateY(-8px); box-shadow: 0 15px 45px rgba(0,0,0,0.12); border-color: var(--rose-gold); }
+.review-stars { color: var(--accent); font-size: 16px; margin-bottom: 18px; letter-spacing: 2px; }
+.review-text { font-size: 15px; color: #555; line-height: 1.85; margin-bottom: 22px; font-style: italic; font-weight: 300; }
+.reviewer { display: flex; gap: 15px; align-items: center; }
+.reviewer-avatar { width: 45px; height: 45px; background: linear-gradient(135deg, var(--rose-gold), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 16px; }
+.reviewer-name { font-size: 14px; font-weight: 800; color: var(--brown); }
+
+#faq { background: white; }
+.faq-container { max-width: 850px; margin: 60px auto; }
+.faq-item { border-bottom: 1px solid rgba(201, 160, 130, 0.2); padding: 28px 0; }
+.faq-q { cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 16px; color: var(--brown); transition: all 0.3s ease; }
+.faq-q:hover { color: var(--rose-gold); }
+.faq-q::after { content: '+'; font-size: 28px; color: var(--rose-gold); transition: transform 0.4s ease; font-weight: 300; }
+.faq-item.open .faq-q::after { content: '−'; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; color: #666; font-size: 15px; line-height: 1.85; font-weight: 300; }
+.faq-item.open .faq-a { max-height: 350px; padding: 18px 0; }
+
+#location { background: linear-gradient(135deg, var(--brown) 0%, #5a4639 50%, var(--light-brown) 100%); color: white; }
+.location-content { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; max-width: 1400px; margin: 0 auto; }
+.location-info h2 { color: white; margin-bottom: 45px; }
+.info-row { display: flex; gap: 25px; margin-bottom: 40px; }
+.info-icon { font-size: 28px; flex-shrink: 0; color: var(--accent); width: 30px; text-align: center; }
+.info-label { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; font-weight: 700; }
+.info-value { font-size: 16px; color: white; font-weight: 600; }
+.info-value a { color: var(--accent); }
+.hours-table { font-size: 15px; margin-top: 12px; }
+.hours-table tr td { padding: 8px 0; }
+.map-placeholder { background: rgba(255,255,255,0.1); border-radius: 20px; padding: 60px; text-align: center; backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+
+#cta { background: linear-gradient(135deg, var(--rose-gold) 0%, #d4af37 50%, #b8941a 100%); color: white; text-align: center; padding: 100px 5%; }
+#cta h2 { color: white; margin-bottom: 18px; }
+#cta p { margin: 18px 0 45px; font-size: 17px; font-weight: 300; }
+.cta-buttons { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+.cta-wa { background: white; color: var(--brown); padding: 15px 36px; border-radius: 50px; font-weight: 700; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: all 0.4s ease; text-transform: uppercase; font-size: 13px; letter-spacing: 0.8px; }
+.cta-wa:hover { transform: translateY(-4px); box-shadow: 0 15px 45px rgba(0,0,0,0.3); }
+.cta-call { background: transparent; color: white; padding: 15px 36px; border-radius: 50px; font-weight: 700; border: 2px solid white; transition: all 0.4s ease; text-transform: uppercase; font-size: 13px; letter-spacing: 0.8px; }
+.cta-call:hover { background: white; color: var(--brown); }
+
+footer { background: #1a1a1a; color: rgba(255,255,255,0.6); padding: 50px 5%; text-align: center; font-size: 13px; }
+footer strong { color: rgba(255,255,255,0.95); font-weight: 700; }
+.footer-links { display: flex; gap: 30px; justify-content: center; margin-top: 25px; flex-wrap: wrap; }
+.footer-links a { color: var(--rose-gold); transition: all 0.3s ease; }
+.footer-links a:hover { color: white; }
+
+.float-wa { position: fixed; bottom: 35px; right: 35px; width: 65px; height: 65px; background: linear-gradient(135deg, #25D366, #1fa85e); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4); z-index: 999; animation: pulse 2.5s infinite; transition: all 0.4s ease; color: white; }
+.float-wa:hover { transform: scale(1.12); box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6); }
+
+@keyframes pulse { 0%, 100% { box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4); } 50% { box-shadow: 0 8px 45px rgba(37, 211, 102, 0.8); } }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  .about-content { grid-template-columns: 1fr; gap: 50px; }
+  .location-content { grid-template-columns: 1fr; gap: 50px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  section { padding: 80px 5%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Smiles<span>by</span>DrReema</div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Clinic</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#location">Contact</a></li>
+    <li><a href="https://wa.me/919226188391" class="nav-cta" target="_blank">Book Now</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; max-width: 1500px; margin: 0 auto;">
+    <div>
+      <h1>Your Smile,<br>Our Craft</h1>
+      <div class="tagline">Premium Dental Excellence</div>
+      <div class="hero-text">Experience luxury dentistry specializing in root canal treatment, dental implants, smile makeovers, professional scaling and cleaning, orthodontics with braces, teeth whitening, and biomimetic restorations delivered with meticulous precision and genuine care.</div>
+      <div class="hero-buttons">
+        <a href="https://wa.me/919226188391?text=Hello%20Dr.%20Reema%2C%20I%20would%20like%20to%20book%20a%20consultation" class="btn btn-primary" target="_blank">Book Consultation</a>
+        <a href="tel:+919226188391" class="btn btn-secondary">Call Now</a>
+      </div>
+      <div class="stats">
+        <div><div class="stat-num">5.0</div><div class="stat-label">Google Rating</div></div>
+        <div><div class="stat-num">10+</div><div class="stat-label">Years Excellence</div></div>
+        <div><div class="stat-num">500+</div><div class="stat-label">Happy Smiles</div></div>
+        <div><div class="stat-num">BDS</div><div class="stat-label">Certified Dentist</div></div>
+      </div>
+    </div>
+    <div>
+      <img src="./Images/IMG_8294.jpeg" alt="Dr. Reema Shah - Premium Dentist Virar West" style="width: 100%; border-radius: 25px; box-shadow: 0 25px 60px rgba(0,0,0,0.2);">
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Advanced Dental Services</h2>
+  <p class="services-intro">Comprehensive dental care offering root canal treatment, dental implants, smile makeovers, professional scaling and cleaning, orthodontics with braces, teeth whitening, biomimetic restorations, and pediatric dentistry. Each treatment delivered with premium precision and patient comfort.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <i class="fas fa-tooth" style="font-size: 48px;"></i>
+      <h3>Root Canal Treatment</h3>
+      <p>Painless endodontic therapy to save infected or damaged teeth with precision and care</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-smile" style="font-size: 48px;"></i>
+      <h3>Smile Makeover</h3>
+      <p>Complete smile transformation with cosmetic dentistry and digital smile design</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-gem" style="font-size: 48px;"></i>
+      <h3>Dental Implants</h3>
+      <p>Advanced implant solutions for single teeth, multiple restorations, and complete mouth rehabilitation</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-brush" style="font-size: 48px;"></i>
+      <h3>Scaling & Cleaning</h3>
+      <p>Professional deep cleaning and tartar removal for optimal oral hygiene</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-align-center" style="font-size: 48px;"></i>
+      <h3>Orthodontics & Braces</h3>
+      <p>Teeth alignment with traditional braces and discreet clear aligner systems</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-sparkles" style="font-size: 48px;"></i>
+      <h3>Teeth Whitening</h3>
+      <p>Professional teeth whitening and bleaching for a brighter, more confident smile</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-leaf" style="font-size: 48px;"></i>
+      <h3>Biomimetic Dentistry</h3>
+      <p>Certified specialist in tooth-preserving restorations with maximum preservation, minimum intervention</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-child" style="font-size: 48px;"></i>
+      <h3>Pediatric Dentistry</h3>
+      <p>Gentle, anxiety-free dental care designed specifically for children and young patients</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-content">
+    <div>
+      <img src="./Images/275_Original.jpeg" alt="Dr. Reema Shah - BDS Certified Dentist" class="about-img">
+    </div>
+    <div class="about-text">
+      <h2>Meet Dr. Reema Shah</h2>
+      <p><span class="highlight">BDS • Registration No. 41615A</span></p>
+      <p>Dr. Reema Shah is a <span class="highlight">passionate dental professional</span> with over a decade of dedicated practice in advanced restorative and cosmetic dentistry. Her journey in dentistry is driven by a singular belief: every patient deserves a smile they're proud to share.</p>
+      <p>With specialization in <span class="highlight">biomimetic restorations, implantology, and smile aesthetics</span>, Dr. Shah combines clinical excellence with genuine compassion. She's earned a reputation for her meticulous attention to detail, innovative treatment approaches, and ability to make even anxious patients feel completely at ease.</p>
+      <p>What sets Dr. Shah apart is her commitment to <span class="highlight">tooth preservation</span>. Rather than aggressive interventions, she employs conservative, advanced techniques that maintain maximum natural tooth structure. Her patients consistently praise her calm demeanor, clear communication, and life-changing results.</p>
+      <p>Beyond clinical excellence, Dr. Shah believes in <span class="highlight">transparent pricing</span> and honest recommendations — never upselling, always prioritizing what's genuinely best for her patients' oral health and overall wellbeing.</p>
+      <div class="credentials">
+        <span class="cred">10+ Years Excellence</span>
+        <span class="cred">Certified Implantologist</span>
+        <span class="cred">Biomimetic Specialist</span>
+        <span class="cred">Cosmetic Dentistry</span>
+        <span class="cred">Oral Surgery</span>
+        <span class="cred">Digital Smile Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Premium Clinic</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="./Images/IMG_5319.jpeg" alt="Modern dental treatment room - SmileKraft clinic"></div>
+    <div class="gallery-item"><img src="./Images/IMG_5337.jpeg" alt="Welcoming waiting area - SmileKraft dental clinic"></div>
+    <div class="gallery-item"><img src="./Images/IMG_5334.jpeg" alt="Dr. Reema's credentials and certifications"></div>
+    <div class="gallery-item"><img src="./Images/IMG_5330.jpeg" alt="Premium clinic interior design"></div>
+  </div>
+</section>
+
+<section id="results">
+  <h2>Transformation Gallery</h2>
+  <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; color: #666; font-size: 16px;">Witness real smile transformations from our patients. Every image represents renewed confidence, restored function, and the art of modern dentistry with root canal treatments, implants, smile makeovers, and more.</p>
+  <div class="ba-grid">
+    <div class="ba-card"><img src="./Images/Smile_transformation.png" alt="Complete smile makeover"><div class="ba-info"><div class="ba-title">Comprehensive Smile Makeover</div><span class="ba-tag">Cosmetic Dentistry</span></div></div>
+    <div class="ba-card"><img src="./Images/1000626846.jpeg" alt="Gap closure with aesthetic restoration"><div class="ba-info"><div class="ba-title">Gap Closure</div><span class="ba-tag">Aesthetic Restoration</span></div></div>
+    <div class="ba-card"><img src="./Images/IMG_0044.jpeg" alt="Broken tooth crown restoration"><div class="ba-info"><div class="ba-title">Crown Restoration</div><span class="ba-tag">Ceramic Crown</span></div></div>
+    <div class="ba-card"><img src="./Images/Say_goodbye_to_yellow_stains_and_hello_to_confident_grins_.jpeg" alt="Professional teeth whitening results"><div class="ba-info"><div class="ba-title">Professional Teeth Whitening</div><span class="ba-tag">Teeth Brightening</span></div></div>
+    <div class="ba-card"><img src="./Images/IMG_0049.jpeg" alt="Full mouth rehabilitation treatment"><div class="ba-info"><div class="ba-title">Full Mouth Rehabilitation</div><span class="ba-tag">Complex Restoration</span></div></div>
+    <div class="ba-card"><img src="./Images/IMG_0050.jpeg" alt="Dental implant surgery results"><div class="ba-info"><div class="ba-title">Dental Implant Success</div><span class="ba-tag">Implantology</span></div></div>
+    <div class="ba-card"><img src="./Images/Untitled_design.png" alt="Biomimetic tooth preservation"><div class="ba-info"><div class="ba-title">Biomimetic Restoration</div><span class="ba-tag">Tooth Preservation</span></div></div>
+    <div class="ba-card"><img src="./Images/after.png" alt="Deep composite restoration"><div class="ba-info"><div class="ba-title">Composite Restoration</div><span class="ba-tag">Aesthetic Bonding</span></div></div>
+    <div class="ba-card"><img src="./Images/FullSizeRender.jpeg" alt="Orthodontic alignment with braces"><div class="ba-info"><div class="ba-title">Orthodontic Alignment</div><span class="ba-tag">Clear Aligners</span></div></div>
+    <div class="ba-card"><img src="./Images/1000493018.jpeg" alt="Full mouth ceramic crown restoration"><div class="ba-info"><div class="ba-title">Full Ceramic Restoration</div><span class="ba-tag">Premium Crowns</span></div></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Patient Testimonials</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Great experience with Dr.Reema. Very professional, friendly and did brilliant job.</div>
+      <div class="reviewer"><div class="reviewer-avatar">A</div><div><div class="reviewer-name">Anuj Singh</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Excellent treatment with affordable price.</div>
+      <div class="reviewer"><div class="reviewer-avatar">P</div><div><div class="reviewer-name">Prerana Music Studio</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Went to Smile Kraft twice and Dr Reema Shah is very polite, listens carefully to the problem and provides you with the best solutions.</div>
+      <div class="reviewer"><div class="reviewer-avatar">S</div><div><div class="reviewer-name">Shivani</div></div></div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 60px;">
+    <a href="https://g.page/r/CY9p9xOormbsEBM/review" class="btn btn-primary" target="_blank">Read All Reviews on Google</a>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-q">What is your consultation fee?</div>
+      <div class="faq-a">Our consultation starts at ₹200, which is completely refundable if you proceed with treatment. We believe in transparent, honest pricing with zero hidden charges.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is root canal treatment painful?</div>
+      <div class="faq-a">Absolutely not. With modern anesthesia and our gentle techniques, most patients report feeling completely comfortable throughout the root canal treatment procedure. We prioritize your comfort above all.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is biomimetic dentistry?</div>
+      <div class="faq-a">Biomimetic dentistry is an advanced approach that preserves maximum tooth structure. Instead of preparing entire teeth for crowns, we restore only the damaged portion, maintaining your natural tooth strength and longevity.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you offer dental implants?</div>
+      <div class="faq-a">Yes. Dr. Reema is a certified implantologist offering comprehensive dental implant solutions — from single-tooth implants to complex multi-tooth and full-mouth restorations, all with proven success rates.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What are your clinic hours?</div>
+      <div class="faq-a">Monday to Saturday: 10:30 AM - 2:00 PM and 5:30 PM - 9:00 PM. We're also available for emergencies by prior appointment on Sundays. WhatsApp us anytime for scheduling.</div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="location-content">
+    <div>
+      <h2>Get in Touch</h2>
+      <div class="info-row">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <div class="info-label">Address</div>
+          <div class="info-value">Shop No. 30, H/8 Avenue, Global City, Virar West 401303</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <div class="info-label">Phone & WhatsApp</div>
+          <div class="info-value"><a href="tel:+919226188391">9226188391</a></div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fas fa-instagram"></i></div>
+        <div>
+          <div class="info-label">Instagram</div>
+          <div class="info-value"><a href="https://instagram.com/smilesbydrreema" target="_blank">@smilesbydrreema</a></div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fas fa-clock"></i></div>
+        <div>
+          <div class="info-label">Hours</div>
+          <table class="hours-table">
+            <tr><td>Mon - Sat</td><td>10:30 AM - 2:00 PM</td></tr>
+            <tr><td>Mon - Sat</td><td>5:30 PM - 9:00 PM</td></tr>
+            <tr><td>Sunday</td><td>By Appointment</td></tr>
+          </table>
+        </div>
+      </div>
+      <a href="https://maps.google.com?q=Shop%20no.30,%20H/8%20Avenue,%20Global%20City,%20Virar%20West" class="btn btn-primary" style="margin-top: 35px; display: inline-block;" target="_blank">Get Directions</a>
+    </div>
+    <div class="map-placeholder">
+      <div style="font-size: 56px; margin-bottom: 20px;"><i class="fas fa-map"></i></div>
+      <h3 style="color: white; margin-bottom: 15px; font-size: 22px;">SmileKraft Dental Clinic</h3>
+      <p style="color: rgba(255,255,255,0.8); margin-bottom: 25px; font-size: 15px;">Shop No. 30, H/8 Avenue<br>Global City, Virar West<br>Maharashtra 401303</p>
+      <a href="https://maps.google.com?q=Shop%20no.30,%20H/8%20Avenue,%20Global%20City,%20Virar%20West" class="btn btn-primary" style="display: inline-block;" target="_blank">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <h2>Ready to Transform Your Smile?</h2>
+  <p>Book your personalized consultation for root canal treatment, dental implants, smile makeovers, or any dental needs. We respond to all inquiries within minutes.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/919226188391?text=Hi%20Dr.%20Reema,%20I%20would%20like%20to%20book%20a%20consultation" class="cta-wa" target="_blank">WhatsApp Consultation</a>
+    <a href="tel:+919226188391" class="cta-call">Call 9226188391</a>
+  </div>
+</section>
+
+<footer>
+  <strong>Dr. Reema Shah's SmileKraft Dental Clinic</strong><br>
+  Premium Dentistry • Virar West, Maharashtra<br>
+  Root Canal Treatment • Dental Implants • Smile Makeover • Scaling • Orthodontics<br>
+  <div class="footer-links">
+    <a href="https://instagram.com/smilesbydrreema" target="_blank">Instagram @smilesbydrreema</a>
+    <a href="https://maps.google.com?q=SmileKraft" target="_blank">Google Maps</a>
+    <a href="https://g.page/r/CY9p9xOormbsEBM/review" target="_blank">Google Reviews</a>
+  </div>
+  <p style="margin-top: 20px;">© 2025 SmileKraft Dental Clinic. Your Smile, Our Craft.</p>
+</footer>
+
+<a href="https://wa.me/919226188391" class="float-wa" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    q.closest('.faq-item').classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>
